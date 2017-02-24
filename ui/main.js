@@ -1,3 +1,3 @@
 console.log('Loaded!');
 var ele=document.getElementById("name");
-ele.innerHtml="GEC,BANDA";
+ele.innerHtml="GEC BANDA";
