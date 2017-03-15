@@ -18,7 +18,8 @@ app.get('/circular', function(req, res){
     
 });
 app.get('/gallery', function(req, res){
-    res.send('gallery  requested and will be served');
+     res.sendFile(path.join(__dirname, 'ui', 'gallery.html'));
+
 });
 app.get('/department', function(req, res){
     res.send('department requested and will be served');
