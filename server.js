@@ -15,6 +15,9 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/circular', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'circular.html'));
 });
+app.get('/gallery', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'gallery'));
+});
 
 
 app.get('/department', function (req, res){
