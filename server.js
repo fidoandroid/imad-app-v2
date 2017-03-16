@@ -16,7 +16,7 @@ app.get('/circular', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'circular.html'));
 });
 app.get('/gallery', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'gallery'));
+  res.sendFile(path.join(__dirname, 'ui', 'gallery.html'));
 });
 
 
