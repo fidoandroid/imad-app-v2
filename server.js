@@ -12,19 +12,11 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+app.get('/ui/circular', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'circular.html'));
+});
 
-app.get('/', function (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'circular.html'));
-    
-});
-app.get('/ui/index', function (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-    
-});
-app.get('/ui/gallery', function (req, res){
-     res.sendFile(path.join(__dirname, 'ui', 'gallery.html'));
 
-});
 app.get('/department', function (req, res){
     res.send('department requested and will be served');
 });
